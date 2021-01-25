@@ -1,0 +1,12 @@
+{
+    "name": "bonzai/nette_playing",
+    "type": "project",
+    "authors": [
+        {
+            "name": "vkrouza",
+            "email": "krouza.v@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
