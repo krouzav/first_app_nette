@@ -7,7 +7,7 @@
 <h1 n:block="title">{$post->title}</h1>
 
 <div class="post">{$post->content}</div>
-
+<a n:href="edit $post->id">Edit this post</a>
 <h2>Post new comment</h2>
 
 {control commentForm}
