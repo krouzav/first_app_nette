@@ -9,7 +9,7 @@
 	<h2><a n:href="Post:show $post->id">{$post->title}</a></h2>
 
 	<div>{$post->content}</div>
-	<h2> <a n:href="Post:create">Write new post</a> </h2>
+	<h2> <a n:href="Post:create" n:if="$user->isLoggedIn()">Create post</a> </h2>
 </div>
 
 {/block}

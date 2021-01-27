@@ -16,10 +16,11 @@
 
 <div class="comments">
 	{foreach $comments as $comment}
-		<p><b><a href="mailto:{$comment->email}" n:tag-if="$comment->email">
+		<p><b>{if $user->isLoggedIn()}<a href="mailto:{$comment->email}" n:tag-if="$comment->email">
 			{$comment->name}
-		</a></b> said:</p>
+		</a>{/if}</b> said:</p>
 
 		<div>{$comment->content}</div>
 	{/foreach}
 </div>
+
